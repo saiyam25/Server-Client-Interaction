@@ -1,4 +1,4 @@
-# Simple Python Chat App
+# Simple Python Server Chat
 
 A basic client-server chat application using Python `socket` programming.
 
@@ -7,8 +7,13 @@ A basic client-server chat application using Python `socket` programming.
 - `server.py`: Starts a TCP server and waits for client connection.
 - `client.py`: Connects to the server and exchanges messages.
 
-## 🔧 How to Use
+## How to Use
 
 1. **Start the Server**
-   ```bash
-   python3 server.py
+   
+   python3 comb.py
+
+2. **Client Start Chat**
+
+    python3 client_comb.py
+   
