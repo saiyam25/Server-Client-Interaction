@@ -12,7 +12,7 @@ print("Connected to", client_address)
 
 # Ask client for mode
 client_socket.sendall("Do you want echo mode? (y/n): ".encode())
-mode = client_socket.recv(1024).decode().strip().lower()
+echo = client_socket.recv(1024).decode().strip().lower()
 
 while True:
     message = client_socket.recv(1024).decode()
@@ -23,7 +23,7 @@ while True:
 
     print("Client:", message)
 
-    if mode == 'y':
+    if echo == 'y':
         client_socket.sendall(message.encode())
     else:
         reply = input("Server: ")
